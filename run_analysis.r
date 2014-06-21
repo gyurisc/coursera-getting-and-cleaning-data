@@ -34,7 +34,7 @@ names(allData) <- gsub("std", "Standard", names(allData))
 print("Adding activity names.")
 activityLabels[, 2] <- tolower(activityLabels[,2]) 
 activityLabels[, 2] <- gsub("_u", "U", activityLabels[,2])
-? matriactivityLabels[, 2] <- gsub("_d", "D", activityLabels[,2]) 
+activityLabels[, 2] <- gsub("_d", "D", activityLabels[,2]) 
 substr(activityLabels[, 2], 1,1) <- toupper(substr(activityLabels[, 2], 1, 1))
 al <- activityLabels[allLabels[, 1], 2]
 allLabels[, 1] <- al
@@ -67,7 +67,9 @@ for(i in 1:subjectLength)
     finalDataAvg[r, 2] <- activity
     subjectVector <- i == finalData$subject
     activityVector <- activity == finalData$activity
-    finalDataAvg[r, 3:columnLength] <- colMeans(finalDataAvg[subjectVector&activityVector, 3:columnLength])
+    finalDataAvg[r, 3:columnLength] <- colMeans(finalData[subjectVector&activityVector, 3:columnLength])
     r <- r + 1
   }
 }
+
+write.table(finalDataAvg, "final_data_average.txt")
