@@ -1,4 +1,4 @@
-This repository is contains the course project for the **Getting and Cleaning Data** for coursera.org. 
+This repository is for the course project for the **Getting and Cleaning Data** for coursera.org. 
 
 To run the script make sure that your working directory points to the root of this repository e.g *setwd("/Users/krisztiangyuris/Desktop/r_workingdir/coursera-getting-and-cleaning-data")*
 
@@ -9,15 +9,15 @@ you need to extract the data in the *data* folder in order for the script to wor
 
 After getting the data you need to run the **run_analysis.r** script to produce the data. If everything works fine you should see the following output: 
 
-[1] "Loading data..."
-[1] "Combining test and train data."
-[1] "Extracting and renaming."
-[1] "Adding activity names."
-[1] "Writing out final data set"
+    [1] "Loading data..."
+    [1] "Combining test and train data."
+    [1] "Extracting and renaming."
+    [1] "Adding activity names."
+    [1] "Writing out final data set"
 
 The script should produce the following files: 
 
-final_data.txt  
-final_data_average.txt 
+*final_data.txt*  
+*final_data_average.txt* 
 
-Where the final_data.txt is the final tidy data set with readable column names and the final_data_average.txt is the data containing the average of each variable for each activity and each subject. 
+Where the final_data.txt is the final tidy data set with readable column names and the final_data_average.txt file is the data containing the average of each variable for each activity and each subject. 
