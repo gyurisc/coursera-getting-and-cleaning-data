@@ -42,6 +42,8 @@ names(allLabels) <- "activity"
 
 # Step 4. Appropriately labels the data set with descriptive variable names. 
 names(allSubject) <- "subject"
+
+print("Writing out final data set")
 finalData <- cbind(allSubject, allLabels, allData)
 write.table(finalData, "final_data.txt")
 
