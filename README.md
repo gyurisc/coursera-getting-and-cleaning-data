@@ -1,3 +1,6 @@
+Getting and Cleaning Data Readme
+================================
+
 This repository is the course project for the **Getting and Cleaning Data** training on coursera.org. 
 
 To able to run the script successfully make sure that your working directory points to the root of this repository on your computer 
