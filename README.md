@@ -1,6 +1,8 @@
-This repository is for the course project for the **Getting and Cleaning Data** for coursera.org. 
+This repository is the course project for the **Getting and Cleaning Data** training on coursera.org. 
 
-To run the script make sure that your working directory points to the root of this repository e.g *setwd("/Users/krisztiangyuris/Desktop/r_workingdir/coursera-getting-and-cleaning-data")*
+To able to run the script successfully make sure that your working directory points to the root of this repository on your computer 
+
+For example: *setwd("/Users/krisztiangyuris/Desktop/r_workingdir/coursera-getting-and-cleaning-data")*
 
 After downloading the data from here: 
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
